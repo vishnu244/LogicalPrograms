@@ -9,7 +9,7 @@ Console.WriteLine("Welcome to Logical Programmiing!");
 while (true)
 {
 
-    Console.WriteLine("Choose the Program to be executed :\n1)Febinocciseries\n2)PerfectNumber\n3)PrimeNumber\n4)ReverseNumber");
+    Console.WriteLine("Choose the Program to be executed :\n1)Febinocciseries\n2)PerfectNumber\n3)PrimeNumber\n4)ReverseNumber\n5)StopWatch\n6)CouponCode");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -18,16 +18,24 @@ while (true)
             febinocci.febinocciseries();
             break;
         case 2:
-            PerfectNumber perfectNumber = new ();
+            PerfectNumber perfectNumber = new();
             perfectNumber.perfefctnumber();
             break;
         case 3:
-            PrimeNumber primeNumber = new ();
+            PrimeNumber primeNumber = new();
             primeNumber.primenumber();
             break;
         case 4:
-            ReverseNumber reverseNumber = new ();
+            ReverseNumber reverseNumber = new();
             reverseNumber.reversenumber();
+            break;
+        case 5:
+            stopwatch stopwatch = new();
+            stopwatch.StopWatch();
+            break;
+        case 6:
+            couponcode coupon = new();
+            coupon.CouponCode();
             break;
         default:
             break;
